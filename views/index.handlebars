@@ -22,10 +22,24 @@
         </div>
 
         <div class="col-lg-4 col-right">
-
+            <table>
+                {{#each burgers}}
+                {{if devoured}}
+                <div>{{id}}. {{burger_name}}</div>
+                {{/if}}
+                {{/each}}
+            </table>
         </div>
     </section>
 
+    <form class="create-form">
+        <div class="form-group">
+            <label for="name"></label>
+            <textarea id="name" name="burger-name" rows="3" cols="50"
+                placeholder="What burger do you want me to make?"></textarea>
+        </div>
+        <button type="submit">Add Burger</button>
+    </form>
 
 
 </div>
