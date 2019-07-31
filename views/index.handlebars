@@ -1,0 +1,31 @@
+<h1>Eat-Da-Burger!</h1>
+
+<div class="container">
+    <section id="page-name">
+        <iframe src="https://giphy.com/embed/Zehf1TnUglT2g" width="480" height="270" frameBorder="0" class="giphy-embed"
+            allowFullScreen></iframe>
+        <p><a href="https://giphy.com/gifs/burgers-Zehf1TnUglT2g">via GIPHY</a></p>"
+
+        <iframe src="https://giphy.com/embed/Zehf1TnUglT2g" width="480" height="270" frameBorder="0" class="giphy-embed"
+            allowFullScreen></iframe>
+        <p><a href="https://giphy.com/gifs/burgers-Zehf1TnUglT2g">via GIPHY</a></p>"
+    </section>
+    <section class="row">
+        <div class="col-lg-8 col-left">
+            <table>
+                {{#each burgers}}
+                {{#unless devoured}}
+                {{>burgers/burger-block}}
+                {{/unless}}
+                {{/each}}
+            </table>
+        </div>
+
+        <div class="col-lg-4 col-right">
+
+        </div>
+    </section>
+
+
+
+</div>
