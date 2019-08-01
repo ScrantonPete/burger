@@ -3,7 +3,7 @@ $(function() {
     event.preventDefault();
 
     var newBurger = {
-      burger_name: $("newburger")
+      burger_name: $("#name")
         .val()
         .trim(),
       devoured: 0
@@ -19,7 +19,6 @@ $(function() {
 
   $(".eatburger").on("click", function(event) {
     event.preventDefault();
-
     var id = $(this).data("id");
     var devouredStatus = {
       devoured: 1
@@ -35,6 +34,7 @@ $(function() {
   });
 
   $(".removeburger").on("click", function(event) {
+    console.log("I made it");
     event.preventDefault();
 
     var id = $(this).data("id");

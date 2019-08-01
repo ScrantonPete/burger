@@ -1,3 +1,5 @@
+console.log("Server File");
+
 var express = require("express");
 var bodyParser = require("body-parser");
 

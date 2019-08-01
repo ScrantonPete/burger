@@ -4,11 +4,16 @@
     <section id="page-name">
         <iframe src="https://giphy.com/embed/Zehf1TnUglT2g" width="480" height="270" frameBorder="0" class="giphy-embed"
             allowFullScreen></iframe>
-        <p><a href="https://giphy.com/gifs/burgers-Zehf1TnUglT2g">via GIPHY</a></p>"
+        <a href="https://giphy.com/gifs/burgers-Zehf1TnUglT2g"></a>
+        <iframe src="https://giphy.com/embed/3oEdv5S8Th6b9gsNqM" width="480" height="480" frameBorder="0"
+            class="giphy-embed" allowFullScreen></iframe><a
+            href="https://giphy.com/gifs/laugh-dennys-diner-3oEdv5S8Th6b9gsNqM"></a>
 
         <iframe src="https://giphy.com/embed/Zehf1TnUglT2g" width="480" height="270" frameBorder="0" class="giphy-embed"
             allowFullScreen></iframe>
-        <p><a href="https://giphy.com/gifs/burgers-Zehf1TnUglT2g">via GIPHY</a></p>"
+        <p><a href="https://giphy.com/gifs/burgers-Zehf1TnUglT2g"></a></p>
+
+
     </section>
     <section class="row">
         <div class="col-lg-8 col-left">
@@ -24,7 +29,7 @@
         <div class="col-lg-4 col-right">
             <table>
                 {{#each burgers}}
-                {{if devoured}}
+                {{#if devoured}}
                 <div>{{id}}. {{burger_name}}</div>
                 {{/if}}
                 {{/each}}

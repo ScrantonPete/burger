@@ -14,9 +14,7 @@ var burger = {
     });
   },
   updateOne: function(burgerId, cb) {
-    orm.update("burgers", "devoured", 1, "id", burgerId, function(res) {
-      cb(res);
-    });
+    orm.updateOne("burgers", "devoured", 1, "id", burgerId, cb);
   },
   deleteOne: function(condition, cb) {
     orm.deleteOne("burger", condition, function(res) {
