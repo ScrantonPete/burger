@@ -3,14 +3,14 @@ console.log("Server File");
 var express = require("express");
 var bodyParser = require("body-parser");
 
-var port = process.env.PORT || 3000;
+var PORT = process.env.PORT || 3000;
 
 var app = express();
 
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static("public"));
 
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // Set Handlebars.
 var exphbs = require("express-handlebars");
@@ -23,4 +23,6 @@ var routes = require("./controllers/burgers_controller.js");
 
 app.use("/", routes);
 
-app.listen(port);
+app.listen(PORT, function() {
+  console.log("Listening on port:%s", PORT);
+});
