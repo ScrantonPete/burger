@@ -35,10 +35,11 @@ router.put("/api/burgers/:id", function(req, res) {
   });
 });
 
-router.delete("/api/burger/:id", function(req, res) {
+router.delete("/api/burgers/:id", function(req, res) {
+  console.log("DELETE");
   var condition = "id = " + req.params.id;
 
-  burger.delete(condition, function(result) {
+  burger.deleteOne(condition, function(result) {
     if (result.affectedRows === 0) {
       return res.status(404).end();
     } else {

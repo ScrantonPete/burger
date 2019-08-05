@@ -38,7 +38,7 @@ $(function() {
     event.preventDefault();
 
     var id = $(this).data("id");
-
+    console.log("id:" + id);
     $.ajax({
       type: "DELETE",
       url: "/api/burgers/" + id

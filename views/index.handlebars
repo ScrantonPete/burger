@@ -26,7 +26,7 @@
                         {{#if devoured}}NOTHING BUT CRUMBS!{{else}}EAT THE BURGER!{{/if}}
                     </button>
 
-                    <button class="removerburger" data-id="{{this.id}}">DELETE BURGERS!</button>
+                    <button class="removeburger" data-id="{{this.id}}">DELETE BURGERS!</button>
                 </li>
 
                 {{/unless}}
@@ -39,7 +39,7 @@
                 {{#each burgers}}
                 {{#if devoured}}
                 <div>{{id}} - {{burger_name}}</div>
-                <button class="removerburger" data-id="{{this.id}}">DELETE BURGERS!</button>
+                <button class="removeburger" data-id="{{this.id}}">DELETE BURGERS!</button>
                 {{/if}}
                 {{/each}}
             </table>
